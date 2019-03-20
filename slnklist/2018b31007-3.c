@@ -29,8 +29,28 @@ linklist interSection(linklist L1, linklist L2)
 	}
 	m->next = NULL;
 
-	print(head);
+	//print(head);
 
+	linklist p, q;
+	p = head->next;						 //从有data的地方开始
+	while (p != NULL && p->next != NULL) //最后两个节点相同的时候删掉了最后一个，后移p导致p已为NULL，必须先判断p是否为空，p->next可能已不存在
+	{
+		q = p;
+		while (q->next != NULL)
+		{
+			if (p->data == q->next->data)
+			{
+				q->next = q->next->next;
+			}
+			else
+			{
+				q = q->next;
+			}
+		}
+		p = p->next;
+	}
+
+	/*
 	linklist p = head;
 	while (p != NULL)
 	{
@@ -48,7 +68,8 @@ linklist interSection(linklist L1, linklist L2)
 		}
 		p = p->next;
 	}
-	
+	*/
+
 	return head;
 }
 

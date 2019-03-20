@@ -12,12 +12,12 @@ void delx(linklist head, datatype x)
 	}
 	if (p == NULL)
 	{
-		printf("\n x 不存在 ！");
+		printf("值为x的节点不存在!\n");
 	}
 	else
 	{
 		q->next = p->next;
-		printf("\n 已删除x结点");
+		printf("删除成功！\n");
 		free(p);
 	}
 }

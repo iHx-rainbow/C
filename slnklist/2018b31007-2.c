@@ -24,6 +24,7 @@ void insert(linklist head, datatype x)
 		p->next = s;
 	}
 }
+
 main()
 {
 	linklist head = creatbyqueue();
