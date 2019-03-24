@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "slnklist.h"
 
-//??????????????x?????=y?????н??
+//删除升序单链表中值大于x小于等于y的所有结点
 void del(linklist head, datatype x, datatype y)
 {
     linklist p = head;
@@ -26,9 +26,9 @@ main()
     print(L1);
     int x;
     int y;
-    printf("??????x??");
+    printf("请输入x：");
     scanf("%d", &x);
-    printf("??????y??");
+    printf("请输入y：");
     scanf("%d", &y);
     del(L1, x, y);
     print(L1);
