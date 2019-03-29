@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "seqstack.h"
 #include <string.h>
+#include "seqstack.h"
 
 int kuohao(char str[])
 {
