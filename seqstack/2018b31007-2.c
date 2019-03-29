@@ -11,7 +11,7 @@ void fenli(seqstack *s, sequeue *q)
             q->rear++;
             q->elem[q->rear] = s->elem[s->top];
         }
-        else
+        else    //¶ÓÁÐÄ©Î²µ¹Ðò²åÈë
         {
             b--;
             q->elem[b] = s->elem[s->top];
