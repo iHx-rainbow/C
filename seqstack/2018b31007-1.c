@@ -62,10 +62,10 @@ main()
     int res = kuohao(str);
     if (res)
     {
-        printf("正确!");
+        printf("正确!\n");
     }
     else
     {
-        printf("错误!");
+        printf("错误!\n");
     }
 }

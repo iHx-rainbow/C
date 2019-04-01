@@ -3,7 +3,7 @@
 
 void fenli(seqstack *s, sequeue *q)
 {
-    int b = MAXSIZE;
+    q->front = MAXSIZE;
     while (!empty(s))
     {
         if (s->elem[s->top] % 2 == 0)
@@ -13,17 +13,18 @@ void fenli(seqstack *s, sequeue *q)
         }
         else    //¶ÓÁÐÄ©Î²µ¹Ðò²åÈë
         {
-            b--;
-            q->elem[b] = s->elem[s->top];
+            q->front--;
+            q->elem[q->front] = s->elem[s->top];
         }
         s->top--;
     }
-    while (b < MAXSIZE)
+    while (q->front < MAXSIZE)
     {
         s->top++;
-        s->elem[s->top] = q->elem[b];
-        b++;
+        s->elem[s->top] = q->elem[q->front];
+        q->front++;
     }
+    q->front=-1;
 }
 
 main()
