@@ -56,7 +56,7 @@ int kuohao(char str[])
 main()
 {
     char str[100];
-    printf("ÇëÊäÈëÀ¨ºÅ£º");
+    printf("ÇëÊäÈë´øÀ¨ºÅµÄ×Ö·û´®£º");
     //scanf("%s",str);
     gets(str);
     int res = kuohao(str);
