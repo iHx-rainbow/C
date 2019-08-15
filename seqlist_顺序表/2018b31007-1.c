@@ -22,4 +22,5 @@ void main()
     print(&q);
     reverse(&q);
     print(&q);
+    system("pause"); 
 }
